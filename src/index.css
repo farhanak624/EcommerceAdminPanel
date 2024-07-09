@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: rgba(244, 245, 250, 1);
+  font-family: "Plus Jakarta Sans";
+}
+
+#products-div,
+#vibes-div,
+#flicks-div,
+#sidebar1 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+#percetage1 {
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+@keyframes smooth-appear {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 20%;
+    opacity: 1;
+  }
+}
+
+.sidebar1 {
+  position: absolute;
+  bottom: 0; /* Initial position */
+  right: 0;
+  background-color: slateblue;
+  overflow: hidden;
+  width: 12px;
+  animation: smooth-appear 0.5s ease forwards; /* Apply the animation */
+  opacity: 0; /* Initially hide the sidebar */
+}
+.stsearch-box input {
+  outline: none;
+  border: none;
+  height: 100%;
+}
+.stsearch-box {
+  height: 30px;
+}
+.react-datepicker-wrapper {
+  width: 100%;
+}
+.smooth-appear {
+  animation: smooth-appear-animation 0.5s ease forwards;
+}
+.jvectormap-zoomin,
+.jvectormap-zoomout {
+  display: none;
+}
+@keyframes smooth-appear1 {
+  from {
+    top: 0;
+  }
+  to {
+    top: 17%;
+    opacity: 1;
+  }
+}
+#specialAdd {
+  top: 0%;
+  animation: smooth-appear1 0.5s ease forwards;
+}
+.customDate .react-datepicker__input-container {
+  height: 100%;
+  background-color: transparent;
+}
+.notfi .stdropdown-container {
+  height: 100%;
+  background-color: white;
+}
+
+.select__control,
+.css-13cymwt-control {
+  max-height: 200px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  outline: none;
+}
+.progress {
+  /* width: 200px; */
+  height: 220px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Add this to your CSS file or a <style> tag in your component */
+.custom-checkbox {
+  appearance: none;
+  border: 2px solid #d1d5db; /* Tailwind gray-300 */
+  border-radius: 50%;
+  width: 1.25rem; /* Tailwind h-5 and w-5 */
+  height: 1.25rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-checkbox:checked {
+  background-color: #3b82f6; /* Tailwind blue-600 */
+  border: none;
+}
+
+.custom-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+/* #currency{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+} */
+
+.text-light-blue {
+  color: #87cee5; /* Light Blue */
+}
+
+.text-dark-blue {
+  color: #00008B; /* Dark Blue */
+}
+
+.text-light-green {
+  color: #76e676; /* Light Green */
+}
+
+.text-dark-green {
+  color: #107710; /* Dark Green */
+}
+
+.text-dark-yellow {
+  color: #f3ca14; /* Dark Green */
+}

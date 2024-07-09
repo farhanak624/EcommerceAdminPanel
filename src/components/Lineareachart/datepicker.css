@@ -1,0 +1,10 @@
+.custom-datepicker {
+  width: 100%; /* Set your custom width */
+  height: 100%; /* Set your custom height */
+  border: none;
+
+  background-color: transparent;
+  /* Set your custom border radius */
+  outline: none; /* Remove the outline */
+}
+/*  */

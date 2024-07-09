@@ -1,0 +1,64 @@
+{
+	"compilerOptions": {
+		"paths": {
+			"$actions/*": [
+				"../src/actions/*"
+			],
+			"$assets/*": [
+				"../src/lib/assets/*"
+			],
+			"$comps/*": [
+				"../src/lib/components/*"
+			],
+			"$dev/*": [
+				"../src/dev/*"
+			],
+			"$enhance/*": [
+				"../src/lib/enhancements/*"
+			],
+			"$routes/*": [
+				"../src/routes/*"
+			],
+			"$server/*": [
+				"../src/lib/server/*"
+			],
+			"$utils/*": [
+				"../src/lib/utils/*"
+			]
+		},
+		"rootDirs": [
+			"..",
+			"./types"
+		],
+		"verbatimModuleSyntax": true,
+		"isolatedModules": true,
+		"lib": [
+			"esnext",
+			"DOM",
+			"DOM.Iterable"
+		],
+		"moduleResolution": "bundler",
+		"module": "esnext",
+		"noEmit": true,
+		"target": "esnext"
+	},
+	"include": [
+		"ambient.d.ts",
+		"non-ambient.d.ts",
+		"./types/**/$types.d.ts",
+		"../vite.config.js",
+		"../vite.config.ts",
+		"../src/**/*.js",
+		"../src/**/*.ts",
+		"../src/**/*.svelte",
+		"../tests/**/*.js",
+		"../tests/**/*.ts",
+		"../tests/**/*.svelte"
+	],
+	"exclude": [
+		"../node_modules/**",
+		"../src/service-worker.js",
+		"../src/service-worker.ts",
+		"../src/service-worker.d.ts"
+	]
+}
